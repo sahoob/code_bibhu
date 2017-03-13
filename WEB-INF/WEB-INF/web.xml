@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE web-app
+  PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.2//EN"
+  "http://java.sun.com/j2ee/dtds/web-app_2_2.dtd">
+
+<web-app>
+<login-config>
+<auth-method>FORM</auth-method>
+<form-login-config>
+<form-login-page>/Login.jsp</form-login-page>
+<form-error-page>/error.jsp</form-error-page>
+</form-login-config>
+</login-config>
+
+
+
+  <servlet>
+	  <servlet-name>TestServlet</servlet-name>
+	  <servlet-class>TestServlet</servlet-class>
+ </servlet>
+<servlet>
+	  <servlet-name>MessageServlet</servlet-name>
+	  <servlet-class>MessageServlet</servlet-class>
+</servlet>
+<servlet>
+	  <servlet-name>LocalServlet</servlet-name>
+	  <servlet-class>LocalServlet</servlet-class>
+</servlet>
+<servlet>
+	  <servlet-name>OracleServlet</servlet-name>
+	  <servlet-class>OracleServlet</servlet-class>
+</servlet>
+
+ <servlet-mapping> 
+	 <servlet-name>OracleServlet</servlet-name>
+   	 <url-pattern>/OracleServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping> 
+	 <servlet-name>TestServlet</servlet-name>
+   	 <url-pattern>TestServlet</url-pattern>
+ </servlet-mapping>
+<servlet-mapping> 
+	 <servlet-name>MessageServlet</servlet-name>
+   	 <url-pattern>/MessageServlet</url-pattern>
+ </servlet-mapping>
+<servlet-mapping> 
+	 <servlet-name>LocalServlet</servlet-name>
+   	 <url-pattern>/LocalServlet</url-pattern>
+ </servlet-mapping>
+
+</web-app>

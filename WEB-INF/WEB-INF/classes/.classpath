@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry path="" kind="src"/>
+	<classpathentry path="org.eclipse.jdt.launching.JRE_CONTAINER" kind="con"/>
+	<classpathentry path="D:/JavaSoft/eclipse/JayaSpace/HelloEJB/NHello.jar" kind="lib"/>
+	<classpathentry path="F:/oracle/ora81/jdbc/lib/classes12.zip" kind="lib"/>
+	<classpathentry path="C:/bea9/weblogic92/server/lib/weblogic.jar" kind="lib"/>
+	<classpathentry path="" kind="output"/>
+</classpath>
