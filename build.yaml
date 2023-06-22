@@ -1,0 +1,13 @@
+# Define the build steps
+steps:
+  - name: clean
+    command: mvn clean
+
+  - name: compile
+    command: mvn compile
+
+  - name: test
+    command: mvn test
+
+  - name: package
+    command: mvn package
