@@ -1,3 +1,23 @@
+# Define the build configuration
+build:
+  tool: maven
+
+# Define the source code directory and main class
+source:
+  directory: src/main/java
+  main_class: com.example.MainClass
+
+# Define the dependencies
+dependencies:
+  - group: org.springframework
+    artifact: spring-core
+    version: 5.3.9
+
+  - group: junit
+    artifact: junit
+    version: 4.13.2
+    scope: test
+
 # Define the build steps
 steps:
   - name: clean
